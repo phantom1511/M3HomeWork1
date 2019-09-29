@@ -89,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 textViewG.setTextColor(getResources().getColor(R.color.colorWhite));
                 textViewGr.setTextColor(getResources().getColor(R.color.colorWhite));
                 textViewS.setTextColor(getResources().getColor(R.color.colorWhite));
+                textViewF2.setTextColor(getResources().getColor(R.color.colorWhite));
                 textViewG2.setTextColor(getResources().getColor(R.color.colorWhite));
                 textViewGr2.setTextColor(getResources().getColor(R.color.colorWhite));
                 textViewS2.setTextColor(getResources().getColor(R.color.colorWhite));
