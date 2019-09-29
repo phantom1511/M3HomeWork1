@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/userName"
+            android:textColor="@color/colorName" />
+
+        <Button
+            android:id="@+id/businessButton"
+            android:layout_width="68dp"
+            android:layout_height="25dp"
+            android:background="@color/colorWhite"
+            android:text="@string/businessButton"
+            android:textColor="@color/colorBusiness"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/nameLayout">
+
+        <TextView
+            android:id="@+id/departure"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/departure"
+            android:textColor="@color/colorGrey"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/arrival"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/arrival"
+            android:textColor="@color/colorGrey"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintTop_toBottomOf="@+id/status">
+
+        <Button
+            android:id="@+id/dep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:text="@string/cityDepAbr"
+            android:textColor="@color/colorName"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/plane" />
+
+        <Button
+            android:id="@+id/abr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:text="@string/cityArrAbr"
+            android:textColor="@color/colorName"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/plane">
+
+        <TextView
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cityFrom"
+            android:textColor="@color/colorGrey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cityTo"
+            android:textColor="@color/colorGrey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintTop_toBottomOf="@+id/cities">
+
+        <TextView
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:text="@string/timeDep"
+            android:textColor="@color/colorName"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timeArr"
+            android:textColor="@color/colorName"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/boarding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorName">
+
+        <TextView
+            android:id="@+id/bT"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="@string/boarding"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorGrey"/>
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/cityTo"
+            android:textColor="@color/colorGrey"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/boardingTime"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/boarding"
+        android:background="@color/colorName">
+
+        <TextView
+            android:id="@+id/timeB"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="@string/boardingTime"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorYellow"/>
+        <TextView
+            android:id="@+id/cityT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"
+            android:text="@string/remainingTime"
+            android:textStyle="bold"
+            android:textColor="@color/colorYellow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/YellowInfo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/boardingTime"
+        android:background="@color/colorYellow">
+
+        <TextView
+            android:id="@+id/flight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="@string/flight"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorGrey"/>
+        <TextView
+            android:id="@+id/gate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:textSize="18dp"
+            android:text="@string/gate"
+            android:textColor="@color/colorGrey"/>
+        <TextView
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:textSize="18dp"
+            android:text="@string/group"
+            android:textColor="@color/colorGrey"/>
+        <TextView
+            android:id="@+id/seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:textSize="18dp"
+            android:text="@string/seat"
+            android:textColor="@color/colorGrey"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/YellowInfo2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/YellowInfo"
+        android:background="@color/colorYellow">
+
+        <TextView
+            android:id="@+id/flight1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="@string/flightNum"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorName"/>
+        <TextView
+            android:id="@+id/gate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="@string/gateNum"
+            android:textColor="@color/colorName"/>
+        <TextView
+            android:id="@+id/group1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="70dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="@string/groupNum"
+            android:textColor="@color/colorName"/>
+        <TextView
+            android:id="@+id/seat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="@string/seatNum"
+            android:textColor="@color/colorName"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/companyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/YellowInfo2">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nameAirline"
+            android:textSize="15dp"
+            android:layout_marginRight="100dp"
+            android:textColor="@color/colorGrey" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:src="@drawable/code"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

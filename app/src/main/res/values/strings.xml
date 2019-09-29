@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">M3.HomeWork1</string>
+    <string name="userName">DASTAN TULOKULOV</string>
+    <string name="businessButton">BUSINESS</string>
+    <string name="departure">Departure</string>
+    <string name="arrival">Arrival</string>
+    <string name="cityDepAbr">YYZ</string>
+    <string name="cityArrAbr">LHR</string>
+    <string name="cityFrom">Toronto</string>
+    <string name="cityTo">London</string>
+    <string name="timeDep">3:30pm</string>
+    <string name="timeArr">9:25pm</string>
+    <string name="boarding">Boarding Time</string>
+    <string name="boardingTime">3:00pm</string>
+    <string name="remaining">Remaining</string>
+    <string name="remainingTime">1:32:45</string>
+    <string name="flight">Flight</string>
+    <string name="flightNum">AC182</string>
+    <string name="gate">Gate</string>
+    <string name="gateNum">24</string>
+    <string name="group">Group</string>
+    <string name="groupNum">5</string>
+    <string name="seat">Seat</string>
+    <string name="seatNum">34A</string>
+    <string name="nameAirline">Super Airlines</string>
+</resources>
